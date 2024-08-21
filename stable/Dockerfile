@@ -6,7 +6,7 @@
 # production image and consume unnecessary space.
 #
 
-FROM ubuntu:22.04 as setup
+FROM ubuntu:24.04 as setup
 
 
 ENV IB_GATEWAY_VERSION=10.23.2a
@@ -49,7 +49,7 @@ COPY ./scripts /root/scripts
 # Build Stage: build production image
 #
 
-FROM ubuntu:22.04
+FROM ubuntu:24.04
 
 ENV IB_GATEWAY_VERSION=10.23.2a
 
